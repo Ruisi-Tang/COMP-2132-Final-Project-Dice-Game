@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICE GAME - Your Name?</title>
-    <script src="test.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="script/rollDice.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,11 +13,32 @@
     </header>
 
     <main>
-        <div>
+        <div id="start-page">
             <h3>What is your name?</h3>
-            <input type="text" name="player_name_input" id="player_name_input">
-            <button>OK</button>
+            <input type="text" name="player_name_input" id="player_name_input" placeholder="Specify your name to start the game!">
+            <button id="game-start-btn">Start Game!</button>
         </div>
+
+        <div id="game-page">
+            <div id="player-panel">
+                <h3 id="player_name"></h3>
+                <img id="player-dice-1">
+                <img id="player-dice-2">
+                <p>Your number is: <span id="player-number"></span></p>
+            </div>
+    
+            <div id="robot-panel">
+                <h3 id="robot_name"></h3>
+                <img id="robot-dice-1">
+                <img id="robot-dice-2">
+                <p>Your number is: <span id="robot-number"></span></p>
+            </div>
+    
+            <div id="control-panel">
+                <button id="roll-btn">ROLL!</button>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
