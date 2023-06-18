@@ -1,0 +1,122 @@
+$title-font: 'Shrikhand', cursive;
+$content-font: 'Mukta', sans-serif;
+$background-color: #0bc257;
+
+header {
+    h1{
+        background-color: $background-color;
+        font-family: $title-font;
+        padding: 10px;
+    }
+}
+
+main {
+
+    #start-page {
+        font-family: $title-font;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid rgb(11, 194, 36);
+        border-radius: 15px;
+        margin: 10px;
+        padding: 10px;
+        width: auto;
+
+        input {
+            width: 250px;
+            margin-bottom: 20px;
+        }
+
+        #start-button {
+            background-color: $background-color;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: white;
+            font-family: $title-font;
+            font-size: 20px;
+        }
+    }   
+
+    #game-page {
+        font-family: $title-font;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        visibility: visible;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid rgb(11, 194, 36);
+        border-radius: 15px;
+        margin: 10px;
+        padding: 10px;
+        width: auto;
+
+        .profile-imgs {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .profile {
+            font-family: $content-font;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: auto;
+        }
+
+        .dices {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+
+            .dice {
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 20px;
+            width: 400px; 
+        }
+
+        .panel {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 10px;
+            background-color: $background-color;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+            font-family: $title-font;
+            font-size: 20px;
+        }
+    }
+}
+
+
+

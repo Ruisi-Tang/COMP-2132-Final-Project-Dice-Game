@@ -1,0 +1,101 @@
+header h1 {
+  background-color: #0bc257;
+  font-family: "Shrikhand", cursive;
+  padding: 10px;
+}
+
+main #start-page {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(11, 194, 36);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  width: auto;
+}
+main #start-page input {
+  width: 250px;
+  margin-bottom: 20px;
+}
+main #start-page #start-button {
+  background-color: #0bc257;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+main #game-page {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(11, 194, 36);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  width: auto;
+}
+main #game-page .profile-imgs {
+  width: 100px;
+  border-radius: 50%;
+}
+main #game-page .profile {
+  font-family: "Mukta", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+}
+main #game-page .dices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+main #game-page .dices .dice {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+main #game-page .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 20px;
+  width: 400px;
+}
+main #game-page .panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: #0bc257;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

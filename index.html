@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICE GAME - Your Name?</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="script/rollDice.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>COMP 2132 Final Porject -- Dice Game</h1>
+        <h1>COMP 2132 Final Project -- Dice Game</h1>
     </header>
 
     <main>
@@ -22,20 +27,34 @@
 
         <div id="game-page">
 
-            <div id="player-panel">
-                <h3 id="player_name"></h3>
-                <img id="player-dice-1">
-                <img id="player-dice-2">
-                <p id="player-number-msg" hidden>You've Got <span id="player-number"></span> Points!</p>
-                <p>Your Score is: <span id="player-score"></span></p>
+            <div id="player-panel" class="panel">
+                <div class="profile">
+                    <img src="misc-imgs/profile-imgs/player-profile.png" alt="bot-profile-img" id="bot-profile-img" class="profile-imgs">
+                    <h3 id="player_name">Player</h3>
+                </div>
+                <div class="dices">
+                    <img src="dice-imgs/dice-1.png" id="player-dice-1" class="dice-img" width="50px" height="50px">
+                    <img src="dice-imgs/dice-1.png" id="player-dice-2" class="dice-img" width="50px" height="50px">
+                </div>
+                <div class="info">
+                    <p id="player-number-msg" hidden>You've Got <span id="player-number"></span> Points!</p>
+                    <p>Your Score is: <span id="player-score"></span></p>
+                </div>
             </div>
     
-            <div id="robot-panel">
-                <h3 id="robot_name"></h3>
-                <img id="robot-dice-1">
-                <img id="robot-dice-2">
-                <p id="bot-number-msg" hidden>Bot's Got <span id="robot-number"></span> Points!</p>
-                <p>Bot's Score is: <span id="robot-score"></span></p>
+            <div id="robot-panel" class="panel">
+                <div class="profile">
+                    <img src="misc-imgs/profile-imgs/bot-profile.jpg" alt="bot-profile-img" id="bot-profile-img" class="profile-imgs">
+                    <h3 id="robot_name">Bot</h3>
+                </div>
+                <div class="dices">
+                    <img src="dice-imgs/dice-1.png" id="robot-dice-1" class="dice-img" width="50px" height="50px">
+                    <img src="dice-imgs/dice-1.png" id="robot-dice-2" class="dice-img" width="50px" height="50px">
+                </div>
+                <div class="info">
+                    <p id="bot-number-msg" hidden>Bot's Got <span id="robot-number"></span> Points!</p>
+                    <p>Bot's Score is: <span id="robot-score"></span></p>
+                </div>
             </div>
     
             <div id="control-panel">
@@ -45,15 +64,15 @@
             <div id="result-page" hidden>
                 <div id="winner-page" hidden>
                     <h3>You win!</h3>
-                    <img src="" alt="winner-img">
+                    <img src="misc-imgs/win-lose-draw-imgs/win.gif" alt="winner-img" width="150px" height="100px">
                 </div>
                 <div id="loser-page" hidden>
                     <h3>You lose!</h3>
-                    <img src="" alt="loser-img">
+                    <img src="misc-imgs/win-lose-draw-imgs/lose.gif" alt="loser-img" width="150px" height="100px">
                 </div>
                 <div id="draw-page" hidden>
                     <h3>Draw!</h3>
-                    <img src="" alt="draw-img">
+                    <img src="misc-imgs/win-lose-draw-imgs/draw.gif" alt="draw-img" width="150px" height="100px">
                 </div>
                 <button id="reset-btn">Try Again!</button>
             </div>
