@@ -98,4 +98,20 @@ main #game-page .panel {
   color: white;
   font-family: "Shrikhand", cursive;
   font-size: 20px;
+}
+main #result-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  visibility: hidden;
+  border: 2px solid rgb(11, 194, 36);
+  border-radius: 30px;
+  padding: 20px;
+}
+main #result-page h3 {
+  font-family: "Shrikhand", cursive;
+  margin: 10px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

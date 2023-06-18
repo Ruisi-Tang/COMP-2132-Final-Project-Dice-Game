@@ -2,6 +2,13 @@ $title-font: 'Shrikhand', cursive;
 $content-font: 'Mukta', sans-serif;
 $background-color: #0bc257;
 
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 header {
     h1{
         background-color: $background-color;
@@ -114,6 +121,24 @@ main {
             color: white;
             font-family: $title-font;
             font-size: 20px;
+        }
+    }
+
+    #result-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        visibility: hidden;
+        border: 2px solid rgb(11, 194, 36);
+        border-radius: 30px;
+        padding: 20px;
+
+        h3 {
+            font-family: $title-font;
+            margin: 10px;
+            text-align: center;
         }
     }
 }

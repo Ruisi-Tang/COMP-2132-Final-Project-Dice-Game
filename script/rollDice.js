@@ -48,7 +48,7 @@ function rollDice(diceOne, diceTwo) {
 
 //show the winner
 function winner() {
-    resultPage.prop('hidden',false);
+    resultPage.css('visibility', 'visible');
     if (playerScore > botScore) {
         winnerPage.prop('hidden', false);
     } else if (playerScore < botScore) {
@@ -130,7 +130,7 @@ resetBtn.on('click', function () {
     botScoreDisplay.text('0');
     playerNumMsg.prop('hidden', true);
     robotNumMsg.prop('hidden', true);
-    resultPage.prop('hidden', true);
+    resultPage.css('visibility', 'hidden');
     winnerPage.prop('hidden', true);
     loserPage.prop('hidden', true);
     drawPage.prop('hidden', true);
