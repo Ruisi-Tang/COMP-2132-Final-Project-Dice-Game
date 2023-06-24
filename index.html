@@ -22,6 +22,7 @@
         <div id="start-page">
             <h3>What is your name?</h3>
             <input type="text" name="player_name_input" id="player_name_input" placeholder="Input your name here!">
+            <p id="error-msg" hidden>You must tell me your name to start the game!</p>
             <button id="game-start-btn">Start Game!</button>
         </div>
 
@@ -38,7 +39,7 @@
                 </div>
                 <div class="info">
                     <p id="player-number-msg" hidden>You've Got <span id="player-number"></span> Points!</p>
-                    <p>Your Total Score is: <span id="player-score"></span></p>
+                    <p>Your Total Score is: <span id="player-score">0</span></p>
                 </div>
             </div>
     
@@ -53,12 +54,12 @@
                 </div>
                 <div class="info">
                     <p id="bot-number-msg" hidden>Bot's Got <span id="robot-number"></span> Points!</p>
-                    <p>Bot's Total Score is: <span id="robot-score"></span></p>
+                    <p>Bot's Total Score is: <span id="robot-score">0</span></p>
                 </div>
             </div>
     
             <div id="control-panel">
-                <button id="roll-btn">ROLL!</button>
+                <button id="roll-btn" disabled>ROLL!</button>
             </div>
 
             <div id="result-page">

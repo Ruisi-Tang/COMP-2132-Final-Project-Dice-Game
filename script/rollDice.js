@@ -10,6 +10,7 @@ const resetBtn = $('#reset-btn');
 
 //pages elements
 const startPage = $('#start-page');
+const gamePage  = $('#game-page');
 const resultPage = $('#result-page');
 const winnerPage = $('#winner-page');
 const loserPage = $('#loser-page');
@@ -41,17 +42,24 @@ function Player (name, score) {
 }
 
 const MAX_DICE_ROLL = 3;
-const WINNING_MSG_TIME_OUT_MSEC = 500;
+const WINNING_MSG_TIME_OUT_MSEC = 1000;
 
 //create player object (human player input their name in the prompt)
 startBtn.on('click', function () {
     console.log('start button was clicked');
     const playerNameInputVal = $('#player_name_input').val(); 
     console.log(playerNameInputVal);
-    const player = new Player(playerNameInputVal, 0);
-    console.log('player name is:' + player.name);
-    playerName.text(player.name); 
-    startPage.css('visibility', 'hidden');
+    if (playerNameInputVal == null || playerNameInputVal.trim() === '') {
+        $('#error-msg').prop('hidden', false);
+        $('#player_name_input').css('border', '5px solid red');
+    }else{
+        const player = new Player(playerNameInputVal, 0);
+        console.log('player name is:' + player.name);
+        playerName.text(player.name); 
+        startPage.fadeOut(1000);
+        gamePage.css('display', 'flex').hide().fadeIn(1000);
+        rollBtn.prop('disabled', false);
+    }
 });
 
 //roll dice function
@@ -170,5 +178,4 @@ resetBtn.on('click', function () {
     rollBtn.prop('hidden', false);
     rollBtn.text('ROLL!');
 });
-
 

@@ -70,14 +70,22 @@ main {
             margin-bottom: 20px;
         }
 
+        #error-msg {
+            color: red;
+            font-family: sans-serif;
+            font-size: 15px;
+            width: 200px;
+        }
+
         #game-start-btn {
             @include buttons;
         }
-    }   
+    }
+
 
     #game-page {
         font-family: $title-font;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -158,9 +166,16 @@ main {
         background-color: $torquise;
         border-radius: 30px;
         padding: 20px;
+        width: 300px;
+
+        img {
+            align-self: center;
+            margin-left: 8px;
+        }
 
         h3 {
             font-family: $title-font;
+            font-size: xx-large;
             margin: 10px;
             text-align: center;
         }
@@ -169,7 +184,6 @@ main {
     #control-panel {
         #roll-btn {
             @include buttons;
-
             &:disabled {
                 background-color: $black;
             }

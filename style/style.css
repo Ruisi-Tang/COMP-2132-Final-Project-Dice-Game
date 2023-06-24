@@ -34,6 +34,12 @@ main #start-page input {
   height: 30px;
   margin-bottom: 20px;
 }
+main #start-page #error-msg {
+  color: red;
+  font-family: sans-serif;
+  font-size: 15px;
+  width: 200px;
+}
 main #start-page #game-start-btn {
   background-color: #108883;
   padding: 10px;
@@ -52,7 +58,7 @@ main #start-page #game-start-btn:active {
 }
 main #game-page {
   font-family: "Shrikhand", cursive;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -129,9 +135,15 @@ main #result-page {
   background-color: #26e5dd;
   border-radius: 30px;
   padding: 20px;
+  width: 300px;
+}
+main #result-page img {
+  align-self: center;
+  margin-left: 8px;
 }
 main #result-page h3 {
   font-family: "Shrikhand", cursive;
+  font-size: xx-large;
   margin: 10px;
   text-align: center;
 }
