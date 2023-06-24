@@ -16,23 +16,25 @@ main #start-page {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
   font-family: "Shrikhand", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-  border: 2px solid rgb(11, 194, 36);
+  border: 2px solid #26e5dd;
+  background-color: #26e5dd;
   border-radius: 15px;
   margin: 10px;
   padding: 10px;
   width: auto;
 }
 main #start-page input {
-  width: 250px;
+  width: 200px;
+  height: 30px;
   margin-bottom: 20px;
 }
-main #start-page #start-button {
+main #start-page #game-start-btn {
   background-color: #108883;
   padding: 10px;
   margin: 10px;
@@ -41,6 +43,12 @@ main #start-page #start-button {
   color: white;
   font-family: "Shrikhand", cursive;
   font-size: 20px;
+}
+main #start-page #game-start-btn:hover {
+  background-color: #701524;
+}
+main #start-page #game-start-btn:active {
+  background-color: #108883;
 }
 main #game-page {
   font-family: "Shrikhand", cursive;
@@ -69,9 +77,11 @@ main #game-page .profile {
   font-family: "Mukta", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: auto;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 main #game-page .dices {
   display: flex;
@@ -93,13 +103,13 @@ main #game-page .info {
   width: auto;
   border: 2px solid rgb(0, 0, 0);
   padding: 20px;
-  width: 400px;
+  width: 300px;
 }
 main #game-page .panel {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 10px;
+  gap: 30px;
   background-color: #108883;
   padding: 10px;
   margin: 10px;

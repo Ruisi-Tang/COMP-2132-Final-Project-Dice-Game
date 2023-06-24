@@ -3,29 +3,56 @@ let botDiceResults;
 let diceOne; 
 let diceTwo;
 
+//buttons elements
+const startBtn = $('#game-start-btn');
 const rollBtn = $('#roll-btn'); 
-const playerDiceOneImg = $('#player-dice-1');
-const playerDiceTwoImg = $('#player-dice-2');
-const botDiceOneImg = $('#robot-dice-1'); 
-const botDiceTwoImg = $('#robot-dice-2'); 
+const resetBtn = $('#reset-btn');
+
+//pages elements
+const startPage = $('#start-page');
+const resultPage = $('#result-page');
+const winnerPage = $('#winner-page');
+const loserPage = $('#loser-page');
+const drawPage = $('#draw-page');
+
+//text elements
+const playerName = $('#player-name');
 const playerNum = $('#player-number'); 
 const robotNum  = $('#robot-number'); 
 const playerNumMsg = $('#player-number-msg');
 const robotNumMsg = $('#bot-number-msg');
 const playerScoreDisplay = $('#player-score');
 const botScoreDisplay = $('#robot-score');
-const resultPage = $('#result-page');
-const winnerPage = $('#winner-page');
-const loserPage = $('#loser-page');
-const drawPage = $('#draw-page');
-const resetBtn = $('#reset-btn');
+
+//image elements
+const playerDiceOneImg = $('#player-dice-1');
+const playerDiceTwoImg = $('#player-dice-2');
+const botDiceOneImg = $('#robot-dice-1'); 
+const botDiceTwoImg = $('#robot-dice-2'); 
 
 let btnClickCount = 0;
 let playerScore = 0;
 let botScore = 0;
 
+//player object
+function Player (name, score) {
+    this.name = name;
+    this.score = score;
+}
+
 const MAX_DICE_ROLL = 3;
 const WINNING_MSG_TIME_OUT_MSEC = 500;
+
+//create player object (human player input their name in the prompt)
+startBtn.on('click', function () {
+    console.log('start button was clicked');
+    const playerNameInputVal = $('#player_name_input').val(); 
+    console.log(playerNameInputVal);
+    const player = new Player(playerNameInputVal, 0);
+    console.log('player name is:' + player.name);
+    playerName.text(player.name); 
+    startPage.css('visibility', 'hidden');
+});
 
 //roll dice function
 function rollDice(diceOne, diceTwo) {
