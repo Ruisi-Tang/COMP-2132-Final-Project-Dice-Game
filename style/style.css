@@ -1,20 +1,27 @@
+html {
+  background-image: url(../misc-imgs/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 header h1 {
-  background-color: #0bc257;
+  background-color: #26e5dd;
   font-family: "Shrikhand", cursive;
   padding: 10px;
 }
 
 main #start-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Shrikhand", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: 2px solid rgb(11, 194, 36);
   border-radius: 15px;
   margin: 10px;
@@ -26,7 +33,7 @@ main #start-page input {
   margin-bottom: 20px;
 }
 main #start-page #start-button {
-  background-color: #0bc257;
+  background-color: #108883;
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
@@ -46,10 +53,12 @@ main #game-page {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid rgb(11, 194, 36);
+  border: 2px solid #fb8ce4;
+  background-color: #fb8ce4;
   border-radius: 15px;
   margin: 10px;
   padding: 10px;
+  padding-bottom: 0px;
   width: auto;
 }
 main #game-page .profile-imgs {
@@ -91,7 +100,7 @@ main #game-page .panel {
   flex-direction: row;
   justify-content: space-around;
   gap: 10px;
-  background-color: #0bc257;
+  background-color: #108883;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -106,7 +115,8 @@ main #result-page {
   align-items: center;
   gap: 15px;
   visibility: hidden;
-  border: 2px solid rgb(11, 194, 36);
+  border: 2px solid #26e5dd;
+  background-color: #26e5dd;
   border-radius: 30px;
   padding: 20px;
 }
@@ -114,4 +124,45 @@ main #result-page h3 {
   font-family: "Shrikhand", cursive;
   margin: 10px;
   text-align: center;
+}
+main #control-panel #roll-btn {
+  background-color: #108883;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+main #control-panel #roll-btn:hover {
+  background-color: #701524;
+}
+main #control-panel #roll-btn:active {
+  background-color: #108883;
+}
+main #control-panel #roll-btn:disabled {
+  background-color: #0c0c0c;
+}
+main #result-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #result-page #reset-btn {
+  background-color: #108883;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+main #result-page #reset-btn:hover {
+  background-color: #701524;
+}
+main #result-page #reset-btn:active {
+  background-color: #108883;
 }/*# sourceMappingURL=style.css.map */

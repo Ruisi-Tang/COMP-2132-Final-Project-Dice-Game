@@ -113,7 +113,8 @@ rollBtn.on('click', function () {
     console.log('roll button was clicked ' + btnClickCount + ' times');
 
     if (btnClickCount == MAX_DICE_ROLL) {
-        rollBtn.prop('hidden', true);
+        rollBtn.prop('disabled', true);
+        rollBtn.text('Game Over!');
         setTimeout(winner, WINNING_MSG_TIME_OUT_MSEC); 
     }
 }); 
@@ -140,6 +141,7 @@ resetBtn.on('click', function () {
     botDiceOneImg.attr('src', 'dice-imgs/dice-1.png');
     botDiceTwoImg.attr('src', 'dice-imgs/dice-1.png');
     rollBtn.prop('hidden', false);
+    rollBtn.text('ROLL!');
 });
 
 
