@@ -99,6 +99,10 @@ main {
         padding-bottom: 0px;
         width: auto;
 
+        #vs-img{
+            @include center;
+        }
+
         .profile-imgs {
             width: 100px;
             border-radius: 50%;
