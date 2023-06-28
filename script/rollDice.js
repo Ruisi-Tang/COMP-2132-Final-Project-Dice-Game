@@ -176,6 +176,6 @@ resetBtn.on('click', function () {
     botDiceOneImg.attr('src', 'dice-imgs/dice-1.png');
     botDiceTwoImg.attr('src', 'dice-imgs/dice-1.png');
     rollBtn.prop('hidden', false);
-    rollBtn.text('ROLL!');
+    rollBtn.text('⚡⚡⚡ROLL!⚡⚡⚡');
 });
 

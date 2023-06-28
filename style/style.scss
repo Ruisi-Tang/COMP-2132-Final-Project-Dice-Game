@@ -40,10 +40,12 @@ html {
 
 
 header {
+    height: fit-content;
     h1{
         background-color: $torquise;
         font-family: $title-font;
         padding: 10px;
+        text-align: center;
     }
 }
 
@@ -101,6 +103,7 @@ main {
 
         #vs-img{
             @include center;
+            top:45%
         }
 
         .profile-imgs {
@@ -139,7 +142,8 @@ main {
             justify-content: space-between;
             align-items: center;
             width: auto;
-            border: 2px solid rgb(0, 0, 0);
+            border: 5px outset #D457C2;
+            border-radius: 40px;
             padding: 20px;
             width: 300px; 
         }

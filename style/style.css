@@ -5,10 +5,15 @@ html {
   background-attachment: fixed;
 }
 
+header {
+  height: -moz-fit-content;
+  height: fit-content;
+}
 header h1 {
   background-color: #26e5dd;
   font-family: "Shrikhand", cursive;
   padding: 10px;
+  text-align: center;
 }
 
 main #start-page {
@@ -75,6 +80,13 @@ main #game-page {
   padding-bottom: 0px;
   width: auto;
 }
+main #game-page #vs-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 45%;
+}
 main #game-page .profile-imgs {
   width: 100px;
   border-radius: 50%;
@@ -107,7 +119,8 @@ main #game-page .info {
   justify-content: space-between;
   align-items: center;
   width: auto;
-  border: 2px solid rgb(0, 0, 0);
+  border: 5px outset #D457C2;
+  border-radius: 40px;
   padding: 20px;
   width: 300px;
 }
