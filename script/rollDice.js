@@ -86,10 +86,13 @@ function winner() {
     resultPage.css('visibility', 'visible');
     if (playerScore > botScore) {
         winnerPage.prop('hidden', false);
+        console.log('player wins');
     } else if (playerScore < botScore) {
         loserPage.prop('hidden', false);
+        console.log('bot wins');
     } else {
         drawPage.prop('hidden', false);
+        console.log('draw');
     }
 }
 
