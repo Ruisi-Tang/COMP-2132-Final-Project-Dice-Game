@@ -31,6 +31,14 @@ $black: #0c0c0c;
     }
 }
 
+@mixin score-text {
+    font-family: $content-font;
+    font-size: 40px;
+    color: gold;
+    text-shadow: 2px 2px 2px black;
+    margin: 10px;
+}
+
 html {
     background-image: url(../misc-imgs/background-img.jpg);
     background-repeat: no-repeat;
@@ -149,6 +157,14 @@ main {
             border-radius: 40px;
             padding: 20px;
             width: 300px; 
+
+            #player-score {
+                @include score-text;
+            }
+
+            #robot-score {
+                @include score-text;
+            }
         }
 
         .panel {

@@ -127,6 +127,20 @@ main #game-page .info {
   padding: 20px;
   width: 300px;
 }
+main #game-page .info #player-score {
+  font-family: "Mukta", sans-serif;
+  font-size: 40px;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+  margin: 10px;
+}
+main #game-page .info #robot-score {
+  font-family: "Mukta", sans-serif;
+  font-size: 40px;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+  margin: 10px;
+}
 main #game-page .panel {
   display: flex;
   flex-direction: row;
