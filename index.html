@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DICE GAME - Your Name?</title>
+    <title>DICE GAME</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,12 +30,12 @@
 
             <div id="player-panel" class="panel">
                 <div class="profile">
-                    <img src="misc-imgs/profile-imgs/player-profile.png" alt="bot-profile-img" id="bot-profile-img" class="profile-imgs">
+                    <img src="misc-imgs/profile-imgs/player-profile.png" alt="player-profile-img" id="plaer-profile-img" class="profile-imgs">
                     <h3 id="player-name">Player</h3>
                 </div>
                 <div class="dices">
-                    <img src="dice-imgs/dice-1.png" id="player-dice-1" class="dice-img" width="50px" height="50px">
-                    <img src="dice-imgs/dice-1.png" id="player-dice-2" class="dice-img" width="50px" height="50px">
+                    <img src="dice-imgs/dice-1.png" alt="player-dice-1" id="player-dice-1" class="dice-img" width="50" height="50">
+                    <img src="dice-imgs/dice-1.png" alt="player-dice-2" id="player-dice-2" class="dice-img" width="50" height="50">
                 </div>
                 <div class="info">
                     <p id="player-number-msg" hidden>You've Got <span id="player-number"></span> Points!</p>
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <img src="misc-imgs/vs-img.png" alt="vs-img" id="vs-img" width="100px">
+            <img src="misc-imgs/vs-img.png" alt="vs-img" id="vs-img" width="100">
     
             <div id="robot-panel" class="panel">
                 <div class="profile">
@@ -51,8 +51,8 @@
                     <h3 id="robot_name">Bot</h3>
                 </div>
                 <div class="dices">
-                    <img src="dice-imgs/dice-1.png" id="robot-dice-1" class="dice-img" width="50px" height="50px">
-                    <img src="dice-imgs/dice-1.png" id="robot-dice-2" class="dice-img" width="50px" height="50px">
+                    <img src="dice-imgs/dice-1.png" alt="robot-dice-1" id="robot-dice-1" class="dice-img" width="50" height="50">
+                    <img src="dice-imgs/dice-1.png" alt="robot-dice-2" id="robot-dice-2" class="dice-img" width="50" height="50">
                 </div>
                 <div class="info">
                     <p id="bot-number-msg" hidden>Bot's Got <span id="robot-number"></span> Points!</p>
@@ -67,15 +67,15 @@
             <div id="result-page">
                 <div id="winner-page" hidden>
                     <h3>You win!</h3>
-                    <img src="misc-imgs/win-lose-draw-imgs/win.gif" alt="winner-img" width="150px" height="100px">
+                    <img src="misc-imgs/win-lose-draw-imgs/win.gif" alt="winner-img" width="150" height="100">
                 </div>
                 <div id="loser-page" hidden>
                     <h3>You lost!</h3>
-                    <img src="misc-imgs/win-lose-draw-imgs/lose.gif" alt="loser-img" width="150px" height="100px">
+                    <img src="misc-imgs/win-lose-draw-imgs/lose.gif" alt="loser-img" width="150" height="100">
                 </div>
                 <div id="draw-page" hidden>
                     <h3>Draw!</h3>
-                    <img src="misc-imgs/win-lose-draw-imgs/draw.gif" alt="draw-img" width="150px" height="100px">
+                    <img src="misc-imgs/win-lose-draw-imgs/draw.gif" alt="draw-img" width="150" height="100">
                 </div>
                 <button id="reset-btn">Try Again!</button>
             </div>
