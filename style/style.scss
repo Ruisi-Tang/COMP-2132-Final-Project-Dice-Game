@@ -150,12 +150,12 @@ main {
         .info {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             width: auto;
             border: 5px outset #D457C2;
             border-radius: 40px;
-            padding: 20px;
+            padding: 5px;
             width: 300px; 
 
             #player-score {
